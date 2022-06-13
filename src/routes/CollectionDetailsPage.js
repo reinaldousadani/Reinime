@@ -137,6 +137,7 @@ const CollectionDetailsPage = () => {
                   isBulking={isDeleting}
                   isSelected={selectedAnime.includes(anime.id)}
                   onClick={(e) => handleOnCardClick(e, anime.id)}
+                  onActionClick={(e) => handleOnCardClick(e, anime.id)}
                 />
               );
             })}
