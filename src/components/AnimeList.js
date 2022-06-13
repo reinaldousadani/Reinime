@@ -54,15 +54,6 @@ const AnimeList = () => {
     <>
       <SectionHeader ref={headerRef}>
         <Header>Anime List</Header>
-        {state.isBulking ? (
-          <Button type="danger" onClick={() => setInitialValue()}>
-            Cancel
-          </Button>
-        ) : (
-          <Button type="text" onClick={() => setIsBulking(!state.isBulking)}>
-            + Bulk Add
-          </Button>
-        )}
       </SectionHeader>
 
       {error ? (
@@ -83,8 +74,8 @@ const AnimeList = () => {
                 key={anime.id}
                 title={anime.title.romaji}
                 imgSrc={anime.coverImage.large}
-                isBulking={state.isBulking}
                 onClick={(e) => handleOnClick(e, anime.id)}
+                noAction
               />
             ))}
           </Grid>

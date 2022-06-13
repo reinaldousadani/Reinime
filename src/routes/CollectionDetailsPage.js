@@ -18,7 +18,7 @@ const CollectionNameWrapper = styled.div`
   gap: ${theme.main.padding[2]};
   flex-wrap: wrap;
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   border-radius: ${theme.main.borderRadius["lg"]};
   padding-bottom: ${theme.main.padding[2]};
@@ -97,7 +97,8 @@ const CollectionDetailsPage = () => {
           <Button
             type="text"
             style={{
-              alignSelf: "center",
+              alignSelf: "flex-end",
+              fontSize: theme.main.fontSizes.xs,
               opacity: 0.8,
             }}
             onClick={() => setIsRenaming(true)}

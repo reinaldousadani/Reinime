@@ -15,7 +15,6 @@ import AnimeDescription from "../components/AnimeDescription";
 import AnimeGenres from "../components/AnimeGenres";
 import Skeleton from "react-loading-skeleton";
 import { Context as CollectionContext } from "../context/CollectionContext";
-import AddNewCollectionModal from "../components/Modals/AddNewCollectionModal";
 import CollectionNotFoundModal from "../components/Modals/CollectionNotFoundModal";
 import AddToMultipleCollectionsModal from "../components/Modals/AddToMultipleCollectionsModal";
 import CollectionsWithThisAnime from "../components/CollectionsWithThisAnime";
